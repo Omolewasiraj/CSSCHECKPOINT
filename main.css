@@ -1,98 +1,75 @@
 *{
     background: color #d3d3d3;;
-    margin: 0;
+    margin-left: 5px, 10px;
     padding: 0;
     font-family: sans-serif;
 }
 
-.navbar{
+/* Navbar styling */
+.navbar {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-.logo{
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    background-color: #4169e1;
+    padding: 10px 20px; /* Add padding for spacing */
+    background-color: #4b0082; /* Add background color to the navbar */
 }
 
-.links > button{
+/* Styling for the logo icon */
+.logo img {
+    height: auto;
+    width: 100px; /* Set width of the logo */
+    max-width: 100%; 
+    display: block; /* To Remove any unwanted space below the image */
+}
+
+/* Styles for the buttons */
+.links > button {
     margin-right: 2rem;
-    padding: 2px 4px;
-    border: solid#c8a2cb;
+    padding: 10px 20px; /* Adjust padding for better button appearance */
+    border: 2px solid #c8a2cb; /* Fix border color */
     border-radius: 8px;
-    width: 80px;
-    height: 35px;
     font-size: 15px;
     color: white;
     font-weight: bold;
     background-color: purple;
+    cursor: pointer; /* Change cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
 }
 
-
-.Home:hover{
-    background-color: #4a2c72;
+/* Styling for links inside buttons */
+.links > button a {
+    color: white;
+    text-decoration: none; /* Remove underline from the link */
 }
 
-.About:hover{
-    background-color: brown;
+/* Hover effect for buttons */
+.links > button:hover {
+    background-color: #c8a2cb; /* Change background color on hover */
 }
 
-.Work:hover{
-    background-color:#c8a2cb;
+/* Optional: Make buttons display inline-block for better layout control */
+.links > button {
+    display: inline-block;
 }
 
-.Resume:hover{
-    background-color: #c8a2c8;
-}
-
-.Contact1:hover{
-    background-color: #333;
-}
-
-
-.Home:active{
-    background-color: #416941;
-}
-
-.About:active{
-    background-color: #333;
-}
-
-.Work:active{
-    background-color:#c8a2cb;
-}
-
-.Resume:active{
-    background-color: #4169e1;
-}
-
-.Contact1:active{
-    background-color: #333;
-}
-
-
-
-
-
-
-.media-box{
+/* Styling the box for the two videos (1 youtube video & 1 local file video*/
+.media-box {
     width: 1280px;
     height: 450px;
-    margin-left: 10px;
     margin-top: 30px;
     margin-bottom: 45px;
     border-radius: 8px;
     border: 4px solid purple;
-    background-color: #ccccff;
-    display:flex;
+    background: linear-gradient(to right, orchid, #ccccff); /* style for the transforming color of the bg */
+    display: flex;
     justify-content: space-around;
     padding: 25px; 
-    color: #c8a2c8;
+    color: #c8a2c8; 
 }
 
+
+/* styles mainly for the video */
 .first-video,
 .second-video{
     position: relative;
@@ -110,6 +87,8 @@
     height: 350px;
 }
 
+
+/* For the video title i.e the information*/
 .video1-title,
 .video2-title{
     position: absolute;
@@ -119,6 +98,8 @@
     color:rgba(37, 6, 37, 0.774);
     padding-bottom: 2px;
 }
+
+/* for the video number of viewers */
 .video1-stats,
 .video2-stats{
     font-size:  18px;
@@ -127,11 +108,13 @@
     padding: 2px;
 }
 
+/* Video2 size*/
 .video2{
     width: 600px;
     height: 350px;
 }
 
+/* style for the project table named [Projects}*/
 .Projects{
     text-decoration: double;
     font-size: 24px;
@@ -144,13 +127,17 @@
     margin-bottom: 3px;
 }
 
+
+/* style for the table entirely */
 table{
     width: 900px;
     height: 100px;
     margin-top: 3px;
     margin-bottom: 20px;
+    margin-left: 20px;
 }
 
+/*Style for the table heading */
 .Works thead tr{
     background-color: #ccccff;
     color:#4b0082; 
@@ -160,6 +147,8 @@ table{
     border-collapse: separate;
 }
 
+
+/* style for the table datas i.e cells under headings*/
 .Works tbody tr{
     background-color:whitesmoke;
     border-collapse: separate;
@@ -168,6 +157,20 @@ table{
 
 }
 
+/* |Style for the contact text */
+.Contact{
+    font-size: 24px;
+    text-shadow: 2px;
+    text-decoration: double;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: purple;
+    margin-top: 5px;
+    margin-bottom: 3px;
+}
+
+
+/* sytling for the contact table */
 .Contact-us thead tr{
     background-color: #ccccff;
     color:#4b0082;
@@ -184,16 +187,6 @@ table{
     text-align: center;
 }
 
-.Contact{
-    font-size: 24px;
-    text-shadow: 2px;
-    text-decoration: double;
-    text-transform: uppercase;
-    font-weight: bold;
-    color: purple;
-    margin-top: 5px;
-    margin-bottom: 3px;
-}
 
 .My-Resume{
     text-decoration: double;
@@ -207,11 +200,10 @@ table{
     margin-bottom: 10px;
 }
 
-/.Contact Global Styles */
+.Contact 
 body {
-    font-family: Arial, sans-serif;
     background-color: #f4f4f9;
-    margin: 0;
+    margin-top: 20px;
     padding: 0;
     display: flex;
     justify-content: center;
@@ -300,6 +292,7 @@ form button:hover {
 /* Marquee Styles */
 marquee {
     margin-top: 10px;
+    margin-left: 10px;
     font-size: 16px;
     color: orchid;
     font-style: italic;
@@ -308,9 +301,8 @@ marquee {
     border-radius: 4px;
 }
 
-/* Global Styles */
-body {
-    font-family: Arial, sans-serif;
+/* General styling  */
+body {   
     background-color: #f6f2f9; /* Light purple background */
     margin: 0;
     padding: 0;
@@ -327,6 +319,8 @@ body {
     box-sizing: border-box;
     text-align: center;
     border: 1px solid #d0b6e8; /* Light purple border */
+    margin-left: 20px;
+    margin-top: 15px;
 }
 
 /* Farewell Text Styles */
